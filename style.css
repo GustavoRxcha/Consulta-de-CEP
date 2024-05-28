@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 44%, rgba(148,187,233,1) 100%);
+}
+
+h1{
+    text-shadow: rgba(255,0,0,1) 0px 0px 55px;
+}
+
+#consultacss{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+button{
+    font-family:Arial;
+    width:100px;
+    height:25px;
+    margin-left: 10px;
+    color:#fff;
+    border-color:#84bbf3;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+    text-shadow:inset 0px 1px 0px #528ecc;
+    background:linear-gradient(#bddbfa, #80b5ea);
+}
+
+button:hover{
+    background: linear-gradient(#80b5ea, #bddbfa);
+}
+
+#resultado{
+    margin-top: 50px;
+    margin-left: 40%;
+    background: rgba(47, 214, 255, 0.44);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    border: 1px solid rgba(47, 214, 255, 1);
+    width: 20%;
+}
+
