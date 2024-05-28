@@ -18,8 +18,21 @@ function mostrarEndereco(dados) {
     if (dados.erro) {
         resultado.innerHTML = "Não foi possível localizar endereço!";
     } else {
-        resultado.innerHTML = `<p>Endereço: ${dados.logradouro}</p>
+        resultado.innerHTML = `<p>CEP: ${dados.cep}</p>
+                               <p>Endereço: ${dados.logradouro}</p>
                                <p>Bairro: ${dados.bairro}</p>
                                <p>Cidade: ${dados.localidade} - ${dados.uf}</p>` 
+
+        localStorage.setItem('endereco', JSON.stringify(dados));
     }
 }
+
+function carregarEndereco() {
+    let enderecoSalvo = localStorage.getItem('endereco');
+    if (enderecoSalvo) {
+        let dados = JSON.parse(enderecoSalvo);
+        mostrarEndereco(dados);
+    }
+}
+
+window.onload = carregarEndereco;
